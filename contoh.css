@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(135deg, #ff9d76, #ff6f61);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.greeting-card h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 10px;
+}
+
+.greeting-card p {
+    font-size: 1.5rem;
+    color: #fefefe;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.decorations {
+    position: relative;
+}
+
+.crescent-moon {
+    position: absolute;
+    top: -30px;
+    left: 10%;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.star {
+    position: absolute;
+    top: -20px;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.message p {
+    font-size: 1.25rem;
+    color: white;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.mosque {
+    margin-top: 50px;
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 15px 15px 50% 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dome {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 60px;
+    background-color: #ff9d76;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.minaret {
+    position: absolute;
+    top: 20px;
+    width: 40px;
+    height: 120px;
+    background-color: #ff9d76;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.minaret.left {
+    left: 10px;
+}
+
+.minaret.right {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .greeting-card h1 {
+        font-size: 2.5rem;
+    }
+    .greeting-card p {
+        font-size: 1.25rem;
+    }
+
+    .mosque {
+        width: 200px;
+        height: 160px;
+    }
+
+    .dome {
+        width: 100px;
+        height: 50px;
+    }
+
+    .minaret {
+        width: 30px;
+        height: 100px;
+    }
+}
